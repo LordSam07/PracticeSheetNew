@@ -75,7 +75,7 @@ class LinkedListPart2 {
             currentNode = currentNode.next
         }
     }
-
+//sam
     fun removeAt(index: Int){
 
         if (index == 0){
