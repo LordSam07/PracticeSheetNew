@@ -17,6 +17,11 @@ class DoublyLinkedList {
 
     fun addBefore(index: Int, data: String){
 
+        if (index == 0){
+            addPrev(data)
+            return
+        }
+
         val newNode = DNode(null, data, null)
         var before = head
         repeat(index){
@@ -123,7 +128,7 @@ fun main(){
     list.addPrev("Sam")
     println(list.size)
     list.removeAt(3)
-    list.addBefore(2, "a")
-    list.getAllFromRight()
+    list.addBefore(0, "a")
+    list.getAllFromLeft()
 
 }
